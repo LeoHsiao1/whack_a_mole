@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WhackAMole</class>
+ <widget class="QMainWindow" name="WhackAMole">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>WhackAMole</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">border-image: url();
+border-image: url(:/new/pictures/pictures/1.png);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>40</y>
+         <width>100</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url();
+border-image: url(:/new/pictures/pictures/6.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>0</y>
+         <width>100</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url();
+border-image: url(:/new/pictures/pictures/5.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>60</y>
+         <width>100</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url();
+border-image: url(:/new/pictures/pictures/7.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>150</y>
+         <width>211</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url();
+border-image: url(:/new/pictures/pictures/2.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>0</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url();
+border-image: url(:/new/pictures/pictures/3.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>10</y>
+         <width>40</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url();
+border-image: url(:/new/pictures/pictures/4.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>140</y>
+         <width>112</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url();
+color: rgb(255, 0, 0);
+font: 12pt &quot;黑体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>剩余时间：10秒</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>170</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url();
+color: rgb(255, 0, 0);
+font: 12pt &quot;黑体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>命中：0只</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>开始</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>暂停</string>
+   </property>
+   <property name="toolTip">
+    <string>暂停</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>结束</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>WhackAMole</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>746</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>796</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>WhackAMole</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>692</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>797</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>394</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>545</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>569</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
