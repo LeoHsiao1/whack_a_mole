@@ -9,4 +9,4 @@
 
 ## 运行结果
 
-![运行结果](pictures/show1.png)
+![运行结果](src/pictures/show1.png)
